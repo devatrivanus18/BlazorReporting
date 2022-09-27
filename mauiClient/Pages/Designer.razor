@@ -1,0 +1,33 @@
+﻿@page "/designer"
+@using System.Net
+@using System.Net.Sockets
+@inject IJSRuntime JSRuntime
+@implements IDisposable
+
+<div style="width:100%; height:800px" id="designer" data-bind="dxReportDesigner: $data"></div>
+
+@code {
+    protected override void OnAfterRender(bool firstRender)
+    {
+        JSRuntime.InvokeAsync<object>("JsFunctions.InitReportDesigner");
+        GetLocalIPAddress();
+    }
+
+    public void Dispose()
+    {
+        JSRuntime.InvokeAsync<string>("JsFunctions.Dispose", "designer");
+    }
+
+    public static string GetLocalIPAddress()
+    {
+        var host = Dns.GetHostEntry(Dns.GetHostName());
+        foreach (var ip in host.AddressList)
+        {
+            if (ip.AddressFamily == AddressFamily.InterNetwork)
+            {
+                return ip.ToString();
+            }
+        }
+        throw new Exception("No network adapters with an IPv4 address in the system!");
+    }
+}
