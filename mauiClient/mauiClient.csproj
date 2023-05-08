@@ -49,4 +49,29 @@
         <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="wwwroot\Reports\SampleReport.repx" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="wwwroot\Reports\CobaReport.cs" />
+      <Compile Include="wwwroot\Reports\CobaReport.Designer.cs" />
+      <Compile Include="wwwroot\Reports\SampleReport.cs">
+        <DependentUpon>SampleReport.repx</DependentUpon>
+      </Compile>
+      <Compile Include="wwwroot\Reports\SampleReport.Designer.cs">
+        <DependentUpon>SampleReport.repx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="wwwroot\Reports\SampleReport.repx" />
+      <EmbeddedResource Include="wwwroot\Reports\CobaReport.resx" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DevExpress.Reporting.Core" Version="22.2.5" />
+      <PackageReference Include="System.Drawing.Common" Version="8.0.0-preview.2.23128.3" />
+    </ItemGroup>
+
 </Project>

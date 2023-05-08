@@ -6,7 +6,10 @@ namespace Backend {
         readonly string ReportDirectory;
         const string FileExtension = ".repx";
         public CustomReportStorageWebExtension(IWebHostEnvironment env) {
-            ReportDirectory = Path.Combine(env.ContentRootPath, "Reports");
+            //ReportDirectory = Path.Combine(env.ContentRootPath, "..\\..\\Reports");
+            //ReportDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\..\\mauiClient\\wwwroot\\Reports"));
+
+            ReportDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\..\\Backend\\wwwroot\\Reports"));
             if (!Directory.Exists(ReportDirectory)) {
                 Directory.CreateDirectory(ReportDirectory);
             }

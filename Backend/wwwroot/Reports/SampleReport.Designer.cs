@@ -12,17 +12,13 @@ namespace Backend.Reports {
     
     public partial class SampleReport : DevExpress.XtraReports.UI.XtraReport {
         private void InitializeComponent() {
-            DevExpress.XtraReports.ReportInitializer reportInitializer = new DevExpress.XtraReports.ReportInitializer(this, "Backend.Reports.SampleReport.repx");
+            DevExpress.XtraReports.ReportInitializer reportInitializer = new DevExpress.XtraReports.ReportInitializer(this, "mauiClient.Reports.SampleReport.repx");
 
             // Controls
             this.TopMargin = reportInitializer.GetControl<DevExpress.XtraReports.UI.TopMarginBand>("TopMargin");
             this.Detail = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailBand>("Detail");
             this.BottomMargin = reportInitializer.GetControl<DevExpress.XtraReports.UI.BottomMarginBand>("BottomMargin");
             this.lbText = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("lbText");
-            this.table1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTable>("table1");
-            this.tableRow1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableRow>("tableRow1");
-            this.tableCell1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell1");
-            this.tableCell2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell2");
 
             // Data Sources
             this.excelDataSource1 = reportInitializer.GetDataSource<DevExpress.DataAccess.Excel.ExcelDataSource>("excelDataSource1");
@@ -31,10 +27,6 @@ namespace Backend.Reports {
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.XRLabel lbText;
-        private DevExpress.XtraReports.UI.XRTable table1;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell1;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell2;
         private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource1;
     }
 }

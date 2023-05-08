@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="22.2.5.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SampleReport" Margins="100, 100, 270.833344, 100" PageWidth="850" PageHeight="1100" Version="22.2">
+  <Extensions>
+    <Item1 Ref="1" Key="VSReportExtInfo" Value=".repx" />
+  </Extensions>
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin" HeightF="270.833344" TextAlignment="TopLeft" Padding="0,0,0,0,100">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRLabel" Name="lbText" Text="Sample Report File Dari MAUI" TextAlignment="MiddleCenter" SizeF="630,270.833344" LocationFloat="10,0" Font="Times New Roman, 48pt" Padding="2,2,0,0,100">
+          <StylePriority Ref="4" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item1>
+    <Item2 Ref="5" ControlType="DetailBand" Name="Detail" TextAlignment="TopLeft" Padding="0,0,0,0,100" />
+    <Item3 Ref="6" ControlType="BottomMarginBand" Name="BottomMargin" TextAlignment="TopLeft" Padding="0,0,0,0,100" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="7" ObjectType="DevExpress.DataAccess.Excel.ExcelDataSource,DevExpress.DataAccess.v22.2" Name="excelDataSource1" Base64="PEV4Y2VsRGF0YVNvdXJjZSBOYW1lPSJleGNlbERhdGFTb3VyY2UxIiBGaWxlTmFtZT0iQzpcVXNlcnNcZGV2YWRcRGVza3RvcFxEYXRhIFBlbmp1YWxhbiArIEtvbnZla3NpLnhsc3giPjxPcHRpb25zIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeGNlbC5FeGNlbFNvdXJjZU9wdGlvbnMiIFNraXBFbXB0eVJvd3M9InRydWUiIFVzZUZpcnN0Um93QXNIZWFkZXI9InRydWUiIFNraXBIaWRkZW5Db2x1bW5zPSJ0cnVlIiBTa2lwSGlkZGVuUm93cz0idHJ1ZSI+PEltcG9ydFNldHRpbmdzIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeGNlbC5FeGNlbFdvcmtzaGVldFNldHRpbmdzIiBXb3Jrc2hlZXROYW1lPSJTaGVldDEiIC8+PC9PcHRpb25zPjxTY2hlbWE+PEZpZWxkSW5mbyBOYW1lPSJUYW5nZ2FsIiBPcmlnaW5hbE5hbWU9IlRhbmdnYWwiIFR5cGU9IlN5c3RlbS5EYXRlVGltZSIgU2VsZWN0ZWQ9InRydWUiIC8+PEZpZWxkSW5mbyBOYW1lPSJTSiIgT3JpZ2luYWxOYW1lPSJTSiIgVHlwZT0iU3lzdGVtLlN0cmluZyIgU2VsZWN0ZWQ9InRydWUiIC8+PEZpZWxkSW5mbyBOYW1lPSJFbm9mYSIgT3JpZ2luYWxOYW1lPSJFbm9mYSIgVHlwZT0iU3lzdGVtLlN0cmluZyIgU2VsZWN0ZWQ9InRydWUiIC8+PEZpZWxkSW5mbyBOYW1lPSJDdXN0b21lciIgT3JpZ2luYWxOYW1lPSJDdXN0b21lciIgVHlwZT0iU3lzdGVtLlN0cmluZyIgU2VsZWN0ZWQ9InRydWUiIC8+PEZpZWxkSW5mbyBOYW1lPSJIYXJnYSIgT3JpZ2luYWxOYW1lPSJIYXJnYSIgVHlwZT0iU3lzdGVtLkRvdWJsZSIgU2VsZWN0ZWQ9InRydWUiIC8+PEZpZWxkSW5mbyBOYW1lPSJRdHkiIE9yaWdpbmFsTmFtZT0iUXR5IiBUeXBlPSJTeXN0ZW0uRG91YmxlIiBTZWxlY3RlZD0idHJ1ZSIgLz48RmllbGRJbmZvIE5hbWU9IkdyYW5kVG90YWwiIE9yaWdpbmFsTmFtZT0iR3JhbmRUb3RhbCIgVHlwZT0iU3lzdGVtLkRvdWJsZSIgU2VsZWN0ZWQ9InRydWUiIC8+PEZpZWxkSW5mbyBOYW1lPSJKZW5pc1Blbmp1YWxhbiIgT3JpZ2luYWxOYW1lPSJKZW5pc1Blbmp1YWxhbiIgVHlwZT0iU3lzdGVtLlN0cmluZyIgU2VsZWN0ZWQ9InRydWUiIC8+PC9TY2hlbWE+PFJlc3VsdFNjaGVtYT48Vmlldz48RmllbGQgTmFtZT0iVGFuZ2dhbCIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlNKIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVub2ZhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RvbWVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhhcmdhIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IlF0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJHcmFuZFRvdGFsIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkplbmlzUGVuanVhbGFuIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvUmVzdWx0U2NoZW1hPjwvRXhjZWxEYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

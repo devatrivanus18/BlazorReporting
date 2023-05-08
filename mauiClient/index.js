@@ -4,14 +4,14 @@ import "./style.css";
 
 window.JsFunctions = {
     _viewerOptions: {
-        reportUrl: ko.observable("SampleReport"),
+        reportUrl: ko.observable("CobaReport"),
         requestOptions: {
             host: "https://localhost:7261",
             invokeAction: "/DXXRDV"
         }
     },
     _designerOptions: {        
-        reportUrl: ko.observable("SampleReport"),
+        reportUrl: ko.observable("CobaReport"),
         requestOptions: {
             host: "https://localhost:7261",
             getDesignerModelAction: "/DXXRD/GetReportDesignerModel"
